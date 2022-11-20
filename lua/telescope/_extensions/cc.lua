@@ -13,6 +13,6 @@ return telescope.register_extension {
         opts = vim.tbl_extend('force', default_opts, cc_json_opts)
     end,
     exports = {
-        cc_json = function(_) list(_, opts) end,
+        cc = function(_) list(_, opts) end,
     },
 }
